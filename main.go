@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"net/http"
 
-	"Gogee"
+	"gogee"
 )
 
 func main() {
-	r := Gogee.New()
+	r := gogee.New()
 	r.GET("/", func(w http.ResponseWriter, req *http.Request) {
 		fmt.Fprintf(w, "URL.Path = %q\n", req.URL.Path)
 	})
